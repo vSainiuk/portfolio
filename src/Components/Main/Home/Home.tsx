@@ -1,8 +1,9 @@
 import React from 'react';
-
-import { Card, CardContent, Typography, Grid, Avatar } from '@mui/material';
+import { Card, CardContent, Grid, Avatar } from '@mui/material';
+import { Typography } from '@material-ui/core'
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
+
 import './Home.scss';
 
 export const Home: React.FC = () => {

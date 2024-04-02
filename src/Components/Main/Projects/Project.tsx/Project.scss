@@ -1,0 +1,24 @@
+.title-project {
+  color: var(--title-color);
+  text-align: center;
+}
+
+.description-project {
+  text-align: left;
+}
+
+.wrapper-video {
+  min-width: 525px;
+  max-width: 525px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.link {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+}
