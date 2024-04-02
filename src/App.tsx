@@ -1,12 +1,13 @@
 import React from 'react';
-import { Home } from './Components/Home/Home.tsx';
-
-import './App.css';
+import { Header } from './Components/Header/Header.tsx';
+import { Main } from './Components/Main/Main.tsx';
+import './App.scss';
 
 const App = () => {
   return (
     <main className="App">
-      <Home />
+      <Header />
+      <Main />
     </main>
   );
 };

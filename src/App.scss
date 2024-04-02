@@ -28,6 +28,24 @@
   color: #61dafb;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 300px;
+}
+
+:root {
+  --html-icon: url(./icons/html.png);
+  --css-icon: url(./icons/css-3.png);
+  --js-icon: url(./icons/js.png);
+  --react-icon: url(./icons/science.png);
+  --node-icon: url(./icons/programing.png);
+  --mui-icon: url(./icons/material-ui.svg);
+  --tailwind-icon: url(./icons/tailwind-css.svg);
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
