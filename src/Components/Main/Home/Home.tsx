@@ -20,7 +20,7 @@ export const Home: React.FC = () => {
   }
   return (
     <>
-      <Card>
+      <Card style={{paddingTop: '100px'}} id="home">
         <CardContent
           sx={{ display: 'flex', justifyContent: 'center', gap: '100px' }}
         >

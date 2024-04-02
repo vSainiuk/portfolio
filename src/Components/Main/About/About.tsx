@@ -6,7 +6,7 @@ import './About.scss';
 
 export const About: React.FC = () => {
   return (
-    <Card sx={{ display: 'flex', marginTop: '300px', height: '370px' }}>
+    <Card id='about' sx={{ display: 'flex', paddingTop: '170px', height: '370px' }}>
       <CardContent sx={{ display: 'flex', justifyContent: 'center' }}>
         <div className="about-image" />
       </CardContent>

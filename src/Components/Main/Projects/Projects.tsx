@@ -7,10 +7,11 @@ import { projects } from '../../../data/projects.ts';
 export const Projects: React.FC = () => {
   return (
     <Card
+      id="projects"
       sx={{
         display: 'flex',
         flexDirection: 'column',
-        marginTop: '300px',
+        paddingTop: '150px',
       }}
     >
       <Typography

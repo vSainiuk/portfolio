@@ -6,7 +6,7 @@ import { Contact } from './Contact/Contact.tsx';
 
 export const Contacts: React.FC = () => {
   return (
-    <Card sx={{ display: 'flex', marginTop: '300px', flexDirection: 'column' }}>
+    <Card id="contacts" sx={{ display: 'flex', width: '100%', padding: '150px 0 70px 0', flexDirection: 'column' }}>
       <Typography
         style={{
           fontWeight: 'bold',

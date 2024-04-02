@@ -1,5 +1,5 @@
 import React from 'react';
-import { AppBar, Toolbar, Typography } from '@material-ui/core';
+import { AppBar, Toolbar, Typography, Link } from '@material-ui/core';
 import { createStyles, makeStyles } from '@material-ui/core/styles';
 
 import './Header.scss';
@@ -11,7 +11,7 @@ const useStyles = makeStyles(() =>
       paddingInline: '100px',
       backgroundColor: 'white',
       color: 'black',
-    },
+    }
   })
 );
 
@@ -21,7 +21,9 @@ export const Header: React.FC = () => {
   return (
     <AppBar position="sticky">
       <Toolbar className={classes.root}>
-        <Typography style={{fontWeight: 'bold'}} variant="h5">Portfolio</Typography>
+        <Typography style={{ fontWeight: 'bold' }} variant="h5">
+          Portfolio
+        </Typography>
 
         <div
           style={{
@@ -31,18 +33,26 @@ export const Header: React.FC = () => {
             alignItems: 'center',
           }}
         >
-          <Typography className="nav-link" variant="h6">
-            Home
-          </Typography>
-          <Typography className="nav-link" variant="h6">
-            About
-          </Typography>
-          <Typography className="nav-link" variant="h6">
-            Projects
-          </Typography>
-          <Typography className="nav-link" variant="h6">
-            Contact
-          </Typography>
+          <Link href="#home" color="inherit" style={{textDecoration: 'none'}}>
+            <Typography className="nav-link" variant="h6">
+              Home
+            </Typography>
+          </Link>
+          <Link href="#about" color="inherit" style={{textDecoration: 'none'}}>
+            <Typography className="nav-link" variant="h6">
+              About
+            </Typography>
+          </Link>
+          <Link href="#projects" color="inherit" style={{textDecoration: 'none'}}>
+            <Typography className="nav-link" variant="h6">
+              Projects
+            </Typography>
+          </Link>
+          <Link href="#contacts" color="inherit" style={{textDecoration: 'none'}}>
+            <Typography className="nav-link" variant="h6">
+              Contact
+            </Typography>
+          </Link>
         </div>
       </Toolbar>
     </AppBar>

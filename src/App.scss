@@ -33,10 +33,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 50px 300px;
+  padding: 0 300px;
 }
 
 :root {
+  scroll-behavior: smooth;
+
   --html-icon: url(./icons/html.png);
   --css-icon: url(./icons/css-3.png);
   --js-icon: url(./icons/js.png);
