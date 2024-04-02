@@ -44,6 +44,13 @@
   --node-icon: url(./icons/programing.png);
   --mui-icon: url(./icons/material-ui.svg);
   --tailwind-icon: url(./icons/tailwind-css.svg);
+
+  --title-color: #26a69a;
+}
+
+.title {
+  text-align: center;
+  color: var(--title-color);
 }
 
 @keyframes App-logo-spin {
