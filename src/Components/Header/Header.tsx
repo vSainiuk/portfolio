@@ -19,7 +19,7 @@ export const Header: React.FC = () => {
   const classes = useStyles();
 
   return (
-    <AppBar position="static">
+    <AppBar position="sticky">
       <Toolbar className={classes.root}>
         <Typography style={{fontWeight: 'bold'}} variant="h5">Portfolio</Typography>
 
