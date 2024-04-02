@@ -39,10 +39,10 @@ export const Home: React.FC = () => {
               Ivano-Frankivsk, Ukraine. 📍
             </Typography>
             <CardContent sx={{ display: 'flex', gap: '20px' }}>
-              <a href="https://www.linkedin.com/in/vadym-sainiuk-552104301/" rel="noreferrer" target="_blank">
+              <a className='link-home' href="https://www.linkedin.com/in/vadym-sainiuk-552104301/" rel="noreferrer" target="_blank">
                 <LinkedInIcon />
               </a>
-              <a href="https://github.com/vSainiuk" rel="noreferrer" target="_blank">
+              <a className='link-home' href="https://github.com/vSainiuk" rel="noreferrer" target="_blank">
                 <GitHubIcon />
               </a>
             </CardContent>

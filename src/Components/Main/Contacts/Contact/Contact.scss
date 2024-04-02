@@ -1,0 +1,7 @@
+.contact-link {
+  transition: transform 0.3s ease-in-out;
+
+  &:hover {
+    transform: translateX(2.5px);
+  }
+}
