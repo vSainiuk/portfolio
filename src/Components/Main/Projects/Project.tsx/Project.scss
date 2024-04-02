@@ -21,4 +21,9 @@
   gap: 5px;
   justify-content: center;
   align-items: center;
+  transition: transform 0.3s ease-in-out;
+
+  &:hover {
+    transform: translateX(2.5px) translateY(-2.5px);
+  }
 }

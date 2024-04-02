@@ -6,6 +6,8 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
 import TelegramIcon from '@mui/icons-material/Telegram';
 
+import './Contact.scss';
+
 interface ContactProps {
   contact: ContactItem;
 }
