@@ -29,6 +29,7 @@ export const Home: React.FC = () => {
               display: 'flex',
               flexDirection: 'column',
               alignItems: 'center',
+              gap: '20px',
             }}
           >
             <Typography style={{ fontWeight: 'bold' }} variant="h3">
