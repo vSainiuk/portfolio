@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card, CardContent, Grid, Avatar } from '@mui/material';
-import { Typography } from '@material-ui/core'
+import { Typography } from '@material-ui/core';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 
@@ -15,12 +15,12 @@ export const Home: React.FC = () => {
 
   function addAnimation() {
     sliders.forEach((slider) => {
-     slider.setAttribute('data-animated', 'true');
+      slider.setAttribute('data-animated', 'true');
     });
   }
   return (
     <>
-      <Card style={{paddingTop: '100px'}} id="home">
+      <Card style={{ paddingTop: '100px' }} id="home">
         <CardContent
           sx={{ display: 'flex', justifyContent: 'center', gap: '100px' }}
         >
@@ -40,10 +40,20 @@ export const Home: React.FC = () => {
               Ivano-Frankivsk, Ukraine. 📍
             </Typography>
             <CardContent sx={{ display: 'flex', gap: '20px' }}>
-              <a className='link-home' href="https://www.linkedin.com/in/vadym-sainiuk-552104301/" rel="noreferrer" target="_blank">
+              <a
+                className="link-home"
+                href="https://www.linkedin.com/in/vadym-sainiuk-552104301/"
+                rel="noreferrer"
+                target="_blank"
+              >
                 <LinkedInIcon />
               </a>
-              <a className='link-home' href="https://github.com/vSainiuk" rel="noreferrer" target="_blank">
+              <a
+                className="link-home"
+                href="https://github.com/vSainiuk"
+                rel="noreferrer"
+                target="_blank"
+              >
                 <GitHubIcon />
               </a>
             </CardContent>
@@ -51,7 +61,7 @@ export const Home: React.FC = () => {
           <Avatar
             sx={{ width: '300px', height: '300px' }}
             alt="Vadym Sainiuk"
-            src="url-to-your-photo.jpg"
+            src="/images/wrtiting-tools.jpg"
           />
         </CardContent>
         <CardContent sx={{ marginTop: '50px' }}>
