@@ -1,8 +1,8 @@
 import React from 'react';
 import { Header } from './Components/Header/Header.tsx';
 import { Main } from './Components/Main/Main.tsx';
-import './App.scss';
 import { Footer } from './Components/Footer/Footer.tsx';
+import './App.scss';
 
 const App = () => {
   return (
