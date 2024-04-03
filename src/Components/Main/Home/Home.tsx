@@ -61,7 +61,7 @@ export const Home: React.FC = () => {
           <Avatar
             sx={{ width: '300px', height: '300px' }}
             alt="Vadym Sainiuk"
-            src="/images/wrtiting-tools.jpg"
+            src="/portfolio/images/wrtiting-tools.jpg"
           />
         </CardContent>
         <CardContent sx={{ marginTop: '50px' }}>
