@@ -3,10 +3,18 @@ import { Typography } from '@material-ui/core';
 import { Card } from '@mui/material';
 import { contacts } from '../../../data/contacts.ts';
 import { Contact } from './Contact/Contact.tsx';
+import { useInView } from 'react-intersection-observer';
 
 export const Contacts: React.FC = () => {
+  const { ref, inView } = useInView(
+    {
+      threshold: 0.5,
+      triggerOnce: true,
+    }
+  );
+
   return (
-    <Card id="contacts" sx={{ display: 'flex', width: '100%', padding: '150px 0 70px 0', flexDirection: 'column' }}>
+    <Card ref={ref} className={`${inView ? 'scroll-right' : ''}`} id="contacts" sx={{ display: 'flex', width: '100%', padding: '150px 0 70px 0', flexDirection: 'column' }}>
       <Typography
         style={{
           fontWeight: 'bold',

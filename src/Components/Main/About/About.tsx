@@ -1,12 +1,20 @@
 import React from 'react';
 import { Card, CardContent } from '@mui/material';
 import { Typography } from '@material-ui/core'
+import { useInView } from 'react-intersection-observer';
 
 import './About.scss';
 
 export const About: React.FC = () => {
+  const { ref, inView } = useInView(
+    { 
+      threshold: 0.5,
+      triggerOnce: true
+    }
+  );
+
   return (
-    <Card id='about' sx={{ display: 'flex', paddingTop: '170px', height: '370px' }}>
+    <Card ref={ref} className={`${inView ? 'scroll-right' : ''}`} id='about' sx={{ display: 'flex', paddingTop: '170px', height: '370px' }}>
       <CardContent sx={{ display: 'flex', justifyContent: 'center' }}>
         <div className="about-image" />
       </CardContent>
