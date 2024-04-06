@@ -11,8 +11,8 @@ export const Contacts: React.FC = () => {
   })
 
   return (
-    <div ref={ref}>
-    <Card className={`${isIntersecting ? 'scroll-right' : ''}`} id="contacts" sx={{ display: 'flex', width: '100%', padding: '150px 0 70px 0', flexDirection: 'column' }}>
+    <div ref={ref} style={{ display: 'flex', width: '100%', padding: '150px 0 70px 0', flexDirection: 'column' }}>
+    <Card className={`${isIntersecting ? 'scroll-right' : ''}`} id="contacts" >
       <Typography
         style={{
           fontWeight: 'bold',
