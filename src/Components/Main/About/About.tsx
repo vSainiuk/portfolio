@@ -1,20 +1,22 @@
 import React from 'react';
 import { Card, CardContent } from '@mui/material';
 import { Typography } from '@material-ui/core'
-import { useInView } from 'react-intersection-observer';
+import { useIntersectionObserver } from 'usehooks-ts'
 
 import './About.scss';
 
 export const About: React.FC = () => {
-  const { ref, inView } = useInView(
-    { 
-      threshold: 0.5,
-      triggerOnce: true
-    }
-  );
+  const { isIntersecting, ref } = useIntersectionObserver({
+    threshold: 0.5,
+  })
+
+  console.log(`Render Section ${ref}`, {
+    isIntersecting,
+  })
 
   return (
-    <Card ref={ref} className={`${inView ? 'scroll-right' : ''}`} id='about' sx={{ display: 'flex', paddingTop: '170px', height: '370px' }}>
+    <div ref={ref}>
+    <Card  className={`${isIntersecting ? 'scroll-right' : ''}`} id='about' sx={{ display: 'flex', paddingTop: '170px', height: '370px' }}>
       <CardContent sx={{ display: 'flex', justifyContent: 'center' }}>
         <div className="about-image" />
       </CardContent>
@@ -41,5 +43,6 @@ export const About: React.FC = () => {
         </Typography>
       </CardContent>
     </Card>
+    </div>
   );
 };
