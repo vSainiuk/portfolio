@@ -1,5 +1,22 @@
 export const projects = [
   {
+    title: 'Eaternity',
+    description:
+      'The wonderful landing page that was developed on one of the most powerful modern development framework Tailwind CSS with spectacular animations',
+    technology: ['Tailwind CSS', 'AOS', 'TS'],
+    video: '/portfolio/Videos/Eaternity.mp4',
+    links: [
+      {
+        title: 'GitHub',
+        url: 'https://github.com/vSainiuk/Eaternity',
+      },
+      {
+        title: 'Demo',
+        url: 'https://vsainiuk.github.io/Eaternity/',
+      },
+    ],
+  },
+  {
     title: 'Met Museum',
     description:
       'The quite simple landing page implemented through the basic but most important technologies of Html and Css according to the BEM methodology using the Scss preprocessor. The task was to demonstrate their ability to use these extremely important technologies',
