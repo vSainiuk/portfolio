@@ -1,5 +1,39 @@
 export const projects = [
   {
+    title: 'Orbifinance',
+    description:
+      'OrbiFinance is an online platform simplifying investments for all users. It offers an easy interface, quick registration, and options like stocks, bonds, cryptocurrencies, and funds. With varied interest rates and a profit calculator, managing finances has never been easier.',
+    technology: ['Next.js', 'Shad/cn', 'Cryptocloud', 'Tailwind...'],
+    video: '/portfolio/Videos/Orbifinance.mp4',
+    links: [
+      {
+        title: 'GitHub',
+        url: 'https://github.com/vSainiuk/Orbifinance',
+      },
+      {
+        title: 'Demo (Github repository)',
+        url: 'https://vsainiuk.github.io/Orbifinance/',
+      },
+    ],
+  },
+  {
+    title: 'Nice Gadgets',
+    description:
+      'A powerful online store developed on React and Redux Toolkit with full functionality and use of local storage to store the necessary data for the user. Most elements are implemented by native css without auxiliary libraries.',
+    technology: ['React', 'Redux Thunk'],
+    video: '/portfolio/Videos/NiceGadgets.mp4',
+    links: [
+      {
+        title: 'GitHub',
+        url: 'https://github.com/fe-nov23-nopyton/catalog',
+      },
+      {
+        title: 'Demo',
+        url: 'https://fe-nov23-nopyton.github.io/catalog/',
+      },
+    ],
+  },
+  {
     title: 'Eaternity',
     description:
       'The wonderful landing page that was developed on one of the most powerful modern development framework Tailwind CSS with spectacular animations',
@@ -64,23 +98,6 @@ export const projects = [
       {
         title: 'Demo',
         url: 'https://vsainiuk.github.io/game-2048/',
-      },
-    ],
-  },
-  {
-    title: 'Nice Gadgets',
-    description:
-      'A powerful online store developed on React and Redux Toolkit with full functionality and use of local storage to store the necessary data for the user. Most elements are implemented by native css without auxiliary libraries.',
-    technology: ['React', 'Redux Thunk'],
-    video: '/portfolio/Videos/NiceGadgets.mp4',
-    links: [
-      {
-        title: 'GitHub',
-        url: 'https://github.com/fe-nov23-nopyton/catalog',
-      },
-      {
-        title: 'Demo',
-        url: 'https://fe-nov23-nopyton.github.io/catalog/',
       },
     ],
   },

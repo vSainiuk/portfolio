@@ -25,6 +25,7 @@ export const Project: React.FC<ProjectProps> = ({ project, reversed }) => {
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'space-between',
+          gap: '6px',
         }}
         style={{ padding: 0 }}
       >

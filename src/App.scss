@@ -64,6 +64,21 @@
 
   --title-color: #26a69a;
   --hover-color: #b2dfdb;
+
+  /// Scroll horizontal area
+  --count-infinity-scroll: 7;
+  --duration-scroll: 30s;
+
+  --width--item: 40px;
+  --height--item: 40px;
+
+  --mask-image-horizontal: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 1) 20%,
+    rgba(0, 0, 0, 1) 80%,
+    rgba(0, 0, 0, 0)
+  );
 }
 
 .title {

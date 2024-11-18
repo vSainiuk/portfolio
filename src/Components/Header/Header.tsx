@@ -33,9 +33,9 @@ export const Header: React.FC = () => {
             alignItems: 'center',
           }}
         >
-          <Link href="#home" color="inherit" style={{textDecoration: 'none'}}>
+          <Link href="#hero" color="inherit" style={{textDecoration: 'none'}}>
             <Typography className="nav-link" variant="h6">
-              Home
+              Me
             </Typography>
           </Link>
           <Link href="#about" color="inherit" style={{textDecoration: 'none'}}>

@@ -1,26 +1,15 @@
-import React from 'react';
-import { Card, CardContent, Grid, Avatar } from '@mui/material';
 import { Typography } from '@material-ui/core';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import { Avatar, Card, CardContent, Grid } from '@mui/material';
+import React from 'react';
 
-import './Home.scss';
+import './Hero.scss';
 
-export const Home: React.FC = () => {
-  const sliders = document.querySelectorAll('.logos-slide');
-
-  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-    addAnimation();
-  }
-
-  function addAnimation() {
-    sliders.forEach((slider) => {
-      slider.setAttribute('data-animated', 'true');
-    });
-  }
+export const Hero: React.FC = () => {
   return (
     <>
-      <Card style={{ paddingTop: '100px' }} id="home">
+      <Card style={{ paddingTop: '100px' }} id="hero">
         <CardContent
           sx={{ display: 'flex', justifyContent: 'center', gap: '100px' }}
         >
@@ -41,7 +30,7 @@ export const Home: React.FC = () => {
             </Typography>
             <CardContent sx={{ display: 'flex', gap: '20px' }}>
               <a
-                className="link-home"
+                className="link-hero"
                 href="https://www.linkedin.com/in/vadym-sainiuk-552104301/"
                 rel="noreferrer"
                 target="_blank"
@@ -49,7 +38,7 @@ export const Home: React.FC = () => {
                 <LinkedInIcon />
               </a>
               <a
-                className="link-home"
+                className="link-hero"
                 href="https://github.com/vSainiuk"
                 rel="noreferrer"
                 target="_blank"
@@ -64,61 +53,65 @@ export const Home: React.FC = () => {
             src="/portfolio/images/Vadym.jpg"
           />
         </CardContent>
+
         <CardContent sx={{ marginTop: '50px' }}>
-          <Grid container spacing={5}>
+          <Grid className="slider" container spacing={5}>
             <Grid xs={3} item>
               <Typography style={{ fontWeight: 'bold' }} variant="h6">
                 Tech Stack <span style={{ paddingLeft: '30px' }}>|</span>
               </Typography>
             </Grid>
-            <Grid item>
+            <Grid
+              MenuProps={{ MenuListProps: { disablePadding: true } }}
+              className="item-icon-slider item-icon-slider1"
+              item
+            >
               <div className="tech-icon html" />
             </Grid>
-            <Grid item>
+            <Grid
+              padding={0}
+              className="item-icon-slider item-icon-slider2"
+              item
+            >
               <div className="tech-icon css" />
             </Grid>
-            <Grid item>
+            <Grid
+              padding={0}
+              className="item-icon-slider item-icon-slider3"
+              item
+            >
               <div className="tech-icon js" />
             </Grid>
-            <Grid item>
+            <Grid
+              padding={0}
+              className="item-icon-slider item-icon-slider4"
+              item
+            >
               <div className="tech-icon react" />
             </Grid>
-            <Grid item>
+            <Grid
+              padding={0}
+              className="item-icon-slider item-icon-slider5"
+              item
+            >
               <div className="tech-icon node" />
             </Grid>
-            <Grid item>
+            <Grid
+              padding={0}
+              className="item-icon-slider item-icon-slider6"
+              item
+            >
               <div className="tech-icon mui" />
             </Grid>
-            <Grid item>
+            <Grid
+              padding={0}
+              className="item-icon-slider item-icon-slider7"
+              item
+            >
               <div className="tech-icon tailwind" />
             </Grid>
           </Grid>
         </CardContent>
-
-        {/* <CardContent sx={{ display: 'flex', marginTop: '50px' }}>
-          <Typography style={{ fontWeight: 'bold' }} variant="h6">
-            Tech Stack <span style={{ paddingLeft: '30px' }}>|</span>
-          </Typography>
-
-          <div className="logos">
-            <div className="logos-slide">
-              <div className="tech-icon html" />
-              <div className="tech-icon css" />
-              <div className="tech-icon js" />
-              <div className="tech-icon react" />
-              <div className="tech-icon node" />
-              <div className="tech-icon mui" />
-              <div className="tech-icon tailwind" />
-              <div className="tech-icon html" />
-              <div className="tech-icon css" />
-              <div className="tech-icon js" />
-              <div className="tech-icon react" />
-              <div className="tech-icon node" />
-              <div className="tech-icon mui" />
-              <div className="tech-icon tailwind" />
-            </div>
-          </div>
-        </CardContent> */}
       </Card>
     </>
   );
