@@ -9,6 +9,6 @@ export const contacts = [
   },
   {
     title: 'Telegram',
-    link: 'https://t.me/vadym_sainiuk',
+    link: 'https://t.me/vadym_js',
   },
 ];

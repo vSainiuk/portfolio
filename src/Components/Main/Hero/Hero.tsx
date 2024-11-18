@@ -1,6 +1,7 @@
 import { Typography } from '@material-ui/core';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import TelegramIcon from '@mui/icons-material/Telegram';
 import { Avatar, Card, CardContent, Grid } from '@mui/material';
 import React from 'react';
 
@@ -29,6 +30,14 @@ export const Hero: React.FC = () => {
               Ivano-Frankivsk, Ukraine. 📍
             </Typography>
             <CardContent sx={{ display: 'flex', gap: '20px' }}>
+            <a
+                className="link-hero"
+                href="https://t.me/vadym_js"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <TelegramIcon />
+              </a>
               <a
                 className="link-hero"
                 href="https://www.linkedin.com/in/vadym-sainiuk-552104301/"

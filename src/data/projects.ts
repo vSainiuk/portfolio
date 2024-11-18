@@ -1,22 +1,5 @@
 export const projects = [
   {
-    title: 'Orbifinance',
-    description:
-      'OrbiFinance is an online platform simplifying investments for all users. It offers an easy interface, quick registration, and options like stocks, bonds, cryptocurrencies, and funds. With varied interest rates and a profit calculator, managing finances has never been easier.',
-    technology: ['Next.js', 'Shad/cn', 'Cryptocloud', 'Tailwind...'],
-    video: '/portfolio/Videos/Orbifinance.mp4',
-    links: [
-      {
-        title: 'GitHub',
-        url: 'https://github.com/vSainiuk/Orbifinance',
-      },
-      {
-        title: 'Demo (Github repository)',
-        url: 'https://vsainiuk.github.io/Orbifinance/',
-      },
-    ],
-  },
-  {
     title: 'Nice Gadgets',
     description:
       'A powerful online store developed on React and Redux Toolkit with full functionality and use of local storage to store the necessary data for the user. Most elements are implemented by native css without auxiliary libraries.',
