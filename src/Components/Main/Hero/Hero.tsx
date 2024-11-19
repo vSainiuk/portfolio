@@ -30,7 +30,7 @@ export const Hero: React.FC = () => {
               Ivano-Frankivsk, Ukraine. 📍
             </Typography>
             <CardContent sx={{ display: 'flex', gap: '20px' }}>
-            <a
+              <a
                 className="link-hero"
                 href="https://t.me/vadym_js"
                 rel="noreferrer"
@@ -65,60 +65,85 @@ export const Hero: React.FC = () => {
 
         <CardContent sx={{ marginTop: '50px' }}>
           <Grid className="slider" container spacing={5}>
-            <Grid xs={3} item>
+            <Grid style={{ padding: 0 }} xs={3} item>
               <Typography style={{ fontWeight: 'bold' }} variant="h6">
                 Tech Stack <span style={{ paddingLeft: '30px' }}>|</span>
               </Typography>
             </Grid>
-            <Grid
-              MenuProps={{ MenuListProps: { disablePadding: true } }}
-              className="item-icon-slider item-icon-slider1"
-              item
-            >
-              <div className="tech-icon html" />
-            </Grid>
-            <Grid
-              padding={0}
-              className="item-icon-slider item-icon-slider2"
-              item
-            >
-              <div className="tech-icon css" />
-            </Grid>
-            <Grid
-              padding={0}
-              className="item-icon-slider item-icon-slider3"
-              item
-            >
-              <div className="tech-icon js" />
-            </Grid>
-            <Grid
-              padding={0}
-              className="item-icon-slider item-icon-slider4"
-              item
-            >
-              <div className="tech-icon react" />
-            </Grid>
-            <Grid
-              padding={0}
-              className="item-icon-slider item-icon-slider5"
-              item
-            >
-              <div className="tech-icon node" />
-            </Grid>
-            <Grid
-              padding={0}
-              className="item-icon-slider item-icon-slider6"
-              item
-            >
-              <div className="tech-icon mui" />
-            </Grid>
-            <Grid
-              padding={0}
-              className="item-icon-slider item-icon-slider7"
-              item
-            >
-              <div className="tech-icon tailwind" />
-            </Grid>
+            <div className="slider-list">
+              <Grid
+                style={{ '--position': 1 } as React.CSSProperties}
+                padding={0}
+                className="item-icon-slider tech-icon next"
+                item
+              />
+              <Grid
+                style={{ '--position': 2 } as React.CSSProperties}
+                padding={0}
+                className="item-icon-slider tech-icon nest"
+                item
+              />
+              <Grid
+                style={{ '--position': 3 } as React.CSSProperties}
+                padding={0}
+                className="item-icon-slider tech-icon html"
+                item
+              />
+              <Grid
+                style={{ '--position': 4 } as React.CSSProperties}
+                padding={0}
+                className="item-icon-slider tech-icon css"
+                item
+              />
+              <Grid
+                style={{ '--position': 5 } as React.CSSProperties}
+                padding={0}
+                className="item-icon-slider tech-icon js"
+                item
+              />
+              <Grid
+                style={{ '--position': 6 } as React.CSSProperties}
+                padding={0}
+                className="item-icon-slider tech-icon react"
+                item
+              />
+              <Grid
+                style={{ '--position': 7 } as React.CSSProperties}
+                padding={0}
+                className="item-icon-slider tech-icon node"
+                item
+              />
+              <Grid
+                style={{ '--position': 8 } as React.CSSProperties}
+                padding={0}
+                className="item-icon-slider tech-icon mui"
+                item
+              />
+              <Grid
+                style={{ '--position': 9 } as React.CSSProperties}
+                padding={0}
+                className="item-icon-slider tech-icon tailwind"
+                item
+              />
+              <Grid
+                style={{ '--position': 10 } as React.CSSProperties}
+                padding={0}
+                className="item-icon-slider tech-icon ts"
+                item
+              />
+              <Grid
+                style={{ '--position': 11 } as React.CSSProperties}
+                padding={0}
+                className="item-icon-slider tech-icon prisma"
+                item
+              />
+              <Grid
+                style={{ '--position': 12 } as React.CSSProperties}
+                padding={0}
+                className="item-icon-slider tech-icon redux"
+                item
+              />
+            </div>
           </Grid>
         </CardContent>
       </Card>

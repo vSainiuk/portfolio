@@ -1,3 +1,10 @@
+:root {
+  --width-item-slider: 50px;
+  --height-slider: 50px;
+  --quantity-slider: 12;
+  --speed-slider: 15s;
+}
+
 .link-hero {
   transition: transform 0.3s ease-in-out;
 
@@ -13,6 +20,48 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.slider-list {
+  position: relative;
+  display: flex;
+  min-width: calc(var(--width-item-slider) * var(--quantity-slider));
+  height: var(--height-slider);
+  overflow: hidden;
+  mask-image: linear-gradient(to right, transparent, #000 10% 90%, transparent);
+
+  &:hover .item-icon-slider {
+    animation-play-state: paused;
+  }
+}
+
+.item-icon-slider {
+  position: absolute;
+  left: 100%;
+  animation: autoMove var(--speed-slider) linear infinite;
+  animation-delay: calc(
+    (var(--speed-slider) / var(--quantity-slider) * (var(--position) - 1))
+  );
+}
+
+.redux {
+  background-image: var(--redux-icon);
+}
+
+.next {
+  background-image: var(--next-icon);
+}
+
+.nest {
+  background-image: var(--nest-icon);
+}
+
+.ts {
+  background-image: var(--ts-icon);
+}
+
+.prisma {
+  background-image: var(--prisma-icon);
 }
 
 .react {
@@ -41,4 +90,13 @@
 
 .tailwind {
   background-image: var(--tailwind-icon);
+}
+
+@keyframes autoMove {
+  from {
+    left: 100%;
+  }
+  to {
+    left: calc(-1 * var(--width-item-slider) * var(--quantity-slider));
+  }
 }
