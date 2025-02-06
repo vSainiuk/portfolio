@@ -1,5 +1,22 @@
 export const projects = [
   {
+    title: 'Planner',
+    description:
+      'Planner is a multi-tool that will allow you to manage various tasks in your life in a very convenient use. The main feature is a Kanban board designed for easy management of tasks and workflows.',
+    technology: ['Next.js', 'Nest.js', 'Dnd-kit'],
+    video: '/portfolio/Videos/Planner.mp4',
+    links: [
+      {
+        title: 'GitHub',
+        url: 'https://github.com/vSainiuk/frontend-kanban',
+      },
+      {
+        title: 'Demo',
+        url: 'https://frontend-kanban-beta.vercel.app/a/tasks-lite',
+      },
+    ],
+  },
+  {
     title: 'Nice Gadgets',
     description:
       'A powerful online store developed on React and Redux Toolkit with full functionality and use of local storage to store the necessary data for the user. Most elements are implemented by native css without auxiliary libraries.',
